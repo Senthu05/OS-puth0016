@@ -18,7 +18,7 @@ const char WHITE = 1;
 
 // Some text to display 
 char[] MESSAGE = "checkpoint 2.3 by puth0016"; 
-char[] MESSAGE1 = "extra work";
+//char[] MESSAGE1 = "extra work";
 
 void main () {
 }
@@ -32,21 +32,18 @@ void RESET() {
 			memset(COLS, WHITE, 40*25);
 			//Print the "hello world!" message
 			char* sc = SCREEN+40; //Display it one line down on the screen
-			char* sc1 = SCREEN + 120;
+			//char* sc1 = SCREEN + 120;
 			char* msg = MESSAGE; // The messag to display
-			char* msg1 = MESSAGE1;
+			//char* msg1 = MESSAGE1;
 			// A simple copy routine to copy the string 
 			while(*msg){
 			*sc++ = *msg++;
 			
 			}
-						while(*msg1){
-			*sc1++ = *msg1++;
-			
-			}
+
 			// Loop forever showing two white lines ae raster bars
 			while(true){
-			if(*RASTER==54 || *RASTER==88){
+			if(*RASTER==54 || *RASTER==66){
 				*BGCOL = WHITE;
 			} else {
 				*BGCOL = BLACK;
